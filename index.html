@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدونة ملحدي العرب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">ملحدي العرب</div>
+    <ul class="nav-links">
+      <li><a href="#articles">المقالات</a></li>
+      <li><a href="#contact">تواصل</a></li>
+      <li><a href="#" id="menu-ai">تحدث مع الذكاء الاصطناعي</a></li>
+    </ul>
+  </nav>
+
+  <!-- قسم المقالات -->
+  <section id="articles">
+    <h2>أحدث المقالات</h2>
+    <div class="post">
+      <h3>عنوان المقال 1</h3>
+      <p>مقدمة قصيرة للمقال...</p>
+      <button class="read-more" data-post="post1">اقرأ المزيد</button>
+    </div>
+    <div class="post">
+      <h3>عنوان المقال 2</h3>
+      <p>مقدمة قصيرة للمقال...</p>
+      <button class="read-more" data-post="post2">اقرأ المزيد</button>
+    </div>
+  </section>
+
+  <!-- قسم التواصل -->
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>البريد الإلكتروني: <a href="mailto:revengee2919@gmail.com">revengee2919@gmail.com</a></p>
+    <p>إنستغرام: <a href="https://www.instagram.com/wacut_e?igsh=bHEyaTdhb3owYWdj" target="_blank">wacut_e</a></p>
+  </section>
+
+  <!-- زر AI Chatbot -->
+  <button id="ai-btn">تحدث مع الذكاء الاصطناعي</button>
+
+  <!-- نافذة Chatbot -->
+  <div id="ai-popup" class="popup">
+    <div class="popup-content">
+      <span id="close-ai">&times;</span>
+      <h2>الذكاء الاصطناعي</h2>
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="اكتب رسالتك هنا...">
+      <button id="send-btn">إرسال</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
